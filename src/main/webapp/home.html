@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./home.css" />
+    <script src="https://kit.fontawesome.com/190e289298.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar nbar">
+            
+            <div class="d-flex">
+                <a href="./about.html" class="nav-p">About</a>
+                <a href="./support.html" class="nav-p">Support</a>
+                <div class="text-center">
+                    <button class="logout-btn" type="button" onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </nav>
+        <div class="mt-5">
+            <div class="d-flex flex-column flex-lg-row">
+                <label class="col-12 col-lg-4 text-lg-center p-2 facname-label" for="facName">Select Faculty Name</label>
+                <select class="col-12 col-lg-6 m-2 home-input" id="facName">
+                    <option value="Mahendra">Satyanandaram</option>
+                    <option value="Hima Bindu">Hima Bindu</option>
+                    <option value="Hima Bindu">Mahendra</option>
+                    <option value="Hima Bindu">Santhosh</option>
+                    <option value="Hima Bindu">Vinod</option>
+                </select>
+            </div>
+            <div class="d-flex flex-column flex-lg-row mt-4">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q1">General Appearence</p>
+                <div class="m-3">
+                    <i onclick="starr('1', '1')" id="11" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('1', '2')" id="12" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('1', '3')" id="13" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('1', '4')" id="14" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('1', '5')" id="15" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q2">Student Friendly</p>
+                <div class="m-3">
+                    <i onclick="starr('2', '1')" id="21" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('2', '2')" id="22" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('2', '3')" id="23" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('2', '4')" id="24" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('2', '5')" id="25" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q3">Subject Knowledge</p>
+                <div class="m-3">
+                    <i onclick="starr('3', '1')" id="31" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('3', '2')" id="32" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('3', '3')" id="33" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('3', '4')" id="34" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('3', '5')" id="35" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q4">Way of Teaching</p>
+                <div class="m-3">
+                    <i onclick="starr('4', '1')" id="41" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('4', '2')" id="42" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('4', '3')" id="43" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('4', '4')" id="44" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('4', '5')" id="45" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q5">Clearence of Doubts</p>
+                <div class="m-3">
+                    <i onclick="starr('5', '1')" id="51" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('5', '2')" id="52" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('5', '3')" id="53" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('5', '4')" id="54" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('5', '5')" id="55" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q6">Time Punctuality</p>
+                <div class="m-3">
+                    <i onclick="starr('6', '1')" id="61"  class="fa-regular fa-star st"></i>
+                    <i onclick="starr('6', '2')" id="62"  class="fa-regular fa-star st"></i>
+                    <i onclick="starr('6', '3')" id="63"  class="fa-regular fa-star st"></i>
+                    <i onclick="starr('6', '4')" id="64"  class="fa-regular fa-star st"></i>
+                    <i onclick="starr('6', '5')" id="65"  class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q7">Coverage of Syllabus</p>
+                <div class="m-3">
+                    <i onclick="starr('7', '1')" id="71" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('7', '2')" id="72" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('7', '3')" id="73" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('7', '4')" id="74" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('7', '5')" id="75" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q8">Level of Examining</p>
+                <div class="m-3">
+                    <i onclick="starr('8', '1')" id="81" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('8', '2')" id="82" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('8', '3')" id="83" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('8', '4')" id="84" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('8', '5')" id="85" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-lg-row">
+                <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="q9">Level of Evaluation</p>
+                <div class="m-3">
+                    <i onclick="starr('9', '1')" id="91" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('9', '2')" id="92" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('9', '3')" id="93" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('9', '4')" id="94" class="fa-regular fa-star st"></i>
+                    <i onclick="starr('9', '5')" id="95" class="fa-regular fa-star st"></i>
+                </div>
+            </div>
+            <p class="col-12 col-lg-4 text-lg-center p-2 facname-label" id="opinion">Anything else you want to share...</p>
+            <textarea id="op" class="home-input opinion" rows="5" cols="30"></textarea>
+            <div class="m-5 text-center">
+                <button onclick="subResp()" type="button" class="logout-btn w-50">Submit</button>
+                <p id="fb-err" style="color: red;"></p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="home.js" ></script>
+
+
+</html>

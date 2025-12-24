@@ -1,0 +1,124 @@
+.nbar{
+    background-image: linear-gradient(to right, #ffffff, #a5ffa5, #ffffff);
+    padding-left: 30px;
+    padding-right: 40px;
+}
+.pr{
+    border-radius: 80px;
+}
+.nav-p{
+    text-decoration: none;
+    color: #034C03;
+    font-weight: bold;
+    margin: 10px;
+    margin-right: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pr-div{
+    display: none;
+}
+
+.logout-btn{
+    align-self: center;
+    background-color: #28C877;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    padding-bottom: 8px;
+    color: #ffffff;
+    width: 100px;
+    border: 2px solid #28C877;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.logout-btn:hover{
+    border: 2px solid #28C877;
+    background-color: #ffffff;
+    color: #28C877;
+}
+
+.home-input{
+    width: 30em;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #034C03;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.home-input:focus{
+    box-shadow: 1px 1px 5px 2px #a4eec9;
+    border: 1px solid #75dea9;
+}
+
+.facname-label{
+    color: #034C03;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.st{
+    font-size: 32px;
+    cursor: pointer;
+}
+.greeen{
+    color: #28C877;
+}
+.opinion{
+    margin-left: 10%;
+    height: 10em;
+    cursor: text;
+    width: 65%;
+}
+.tq{
+    color: #034C03;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rcard-con{
+    width: 45%;
+    align-self: flex-end;
+}
+
+.lcard-con{
+    width: 45%;
+    align-self: flex-start;
+}
+
+.rcard{
+    border: 2px solid #28C877;
+    padding: 20px;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+}
+.lcard{
+    border: 2px solid #28C877;
+    padding: 20px;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+
+.fb-img{
+    width: 70px;
+    border-radius: 40px;
+}
+.fb-name{
+    color: #034C03;
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+.fb-rat{
+    font-weight: bold;
+}
+.op{
+    color: #034C03;
+    font-weight: bold;
+    font-family: cursive;
+    margin-left: 35px;
+    margin-top: -20px;
+}

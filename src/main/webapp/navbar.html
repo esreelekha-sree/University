@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Comaptible" content="IE=edge">
+        <title>UDMS</title>
+        <meta name="desciption" content="Coding collegues">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+            body{
+                background-color:#dcf2e5;
+                background:linear-gradient(to right,#bce3cc,#dcf2e5);
+                margin:3em;
+                
+            }
+            
+            .navbar{
+
+                background:linear-gradient(to right,#079440,#07b34c,#1bc41b);
+                background:linear-gradient(to right,#079440,#07b34c,#1bc41b);
+                background:linear-gradient(to right,#52c441,#48bf36,#62eb4d);
+
+                box-shadow: inset 0 0 5px rgb(0,0,0.4) , 0 0 10px rgba(153, 184, 180, 0.4);
+
+            }
+            .navbar .fas{
+                font-size:30px;
+            }
+            .card{
+                padding:1.5em .5em .5em;
+                text-align:center;
+                border-radius:2em;
+                
+                box-shadow:0 5px 10px rgba(0,0,0, .2);
+            }    
+            .container-main{
+                margin-top: 100px;
+            }
+            .query-container{
+            margin-top: 150px; 
+            margin-left: 250px ;
+            max-height: 250vh;
+            padding: 50px;
+            width: 800px;
+            border-top-right-radius: 35px;
+            border-bottom-left-radius: 35px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+           
+            
+        }
+        .bg-blur{
+            
+            background-color:rgba(116, 100, 100, 0.3);
+            backdrop-filter:blur(10px);
+            box-shadow: antiquewhite;
+        }
+        .submit-btn{
+            position: relative;
+
+        }
+        
+
+        </style>
+            
+    </head>
+    <body>
+                    <nav class="navbar navbar-expand-lg " id="navbar">
+                        <p class="nav-item ms-3 mt-3 me-3"><a href="#" class="nav-link" id="home" title="Home"><b><i class="fas fa-home"></i></b></a></p>
+
+                <div class="container-fluid ">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-col" >
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbar-col">
+                    <ul class="navbar-nav navbar-pills mx-auto">
+                      
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link" id="sem-registration"><b>Sem Registration</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link " id="course-info"><b>Course Info</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link " id="exam-results"><b>Exam Results</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link " id="attendance"><b>Attendance</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link " id="request-fund"><b>Request Fund</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link " id="query"><b>Raise A Query</b></a>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a href="#" class="nav-link " id="faculty-feedback"><b>Faculty Feedback</b></a>
+                        </li>
+
+                    </ul>
+                  </div>
+                  <p class="nav-item ms-auto mt-3 me-3"><a href="#" class="nav-link" id="user-icon"><b><i class="fas fa-user"></i></b></a></p>
+                  
+                </div>
+            </nav>
+
+        
+        <div id="sem-registration-main" >
+            <div class="container container-main">
+            
+                <div class="row gy-3">
+                    <div class="col-sm">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <img src="Images/S_letter.jpeg" class="img-fluid" alt="...">
+                            <h5 class="card-title">AY2023-2024</h5>
+                            <p class="card-text">SEM-1 REGISTRATION</p>
+                            <a href="sem.html" class="btn btn-primary">Click here to Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card h-100" >
+                        <div class="card-body">
+                            <img src="Images/r.webp" class="image-fluid" alt="...." height="250">
+                         <h5 class="card-title">REMEDIAL REGISTRATION</h5>
+                         <p class="card-text">If is there any Remedials you have then you can register here...!</p>
+                        <a href="#" class="btn btn-primary">Click here to Register</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <img src="Images/reg.webp" class="image-fluid" alt="....">
+                            <h5 class="card-title">Registered Now</h5>
+                        </div> 
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        
+        <div id="course-info-main" >
+          <div class="container container-main text-center">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card  offset-2" style="width: 24rem;" >
+          <div class="card-body">
+              <div class="card-img-top">
+                  <img src="Images/profile.jpg" class="card-img-top" alt="..." width="12rem">
+              </div>
+                       
+                         
+                            <h5 class="card-title">PROFILE</h5>
+                            <p class="card-text"><b>Name:</b>Enter ur name<br><b>ID NO.:</b>Enter ur ID<br><b>Branch:</b>Enter ur Branch<br><b>DOB:</b>As per SSC</p>
+                              <a href="#" class="btn btn-primary">UPDATE IF REQUIRED</a>
+                          </div>
+                    </div>
+    </div>
+    <div class="col-lg">
+      <table class="table" width="150px" height="500" style="margin-top:50px">
+            <thead>
+              <tr>  
+                <th scope="col">SL NO.</th>
+                <th scope="col">SUBJETS</th>
+                <th scope="col">CREDITS</th>
+                <th scope="col">Duration</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Software Engineering</td>
+                <td>3CR</td>
+                <td>50hrs</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Operating System</td>
+                <td>3CR</td>
+                <td>50hrs</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Computer Networks</td>
+                <td>3CR</td>
+                <td>50hrs</td>
+              </tr>
+              <tr>
+                  <td scope="row">4</td>
+                  <td>Mathematical Foundation for DataScience</td>
+                  <td>3CR</td>
+                  <td>50hrs</td>
+              </tr>
+              <tr>
+                  <td scope="row">5</td>
+                  <td>Data Mining</td>
+                  <td>2CR</td>
+                  <td>30hrs</td>
+              </tr>
+              <tr>
+                  <td scope="row">6</td>
+                  <td>Operating System Lab</td>
+                  <td>2CR</td>
+                  <td>30hrs</td>
+              </tr>
+              <tr>
+                  <td scope="row">7</td>
+                  <td>Software Engineering Lab</td>
+                  <td>2CR</td>
+                  <td>30hrs</td>
+              </tr>
+              <tr>
+                  <td scope="row">8</td>
+                  <td>Computer Networks Lab</td>
+                  <td>2CR</td>
+                  <td>30hrs</td>
+              </tr>
+              <tr>
+                  <td scope="row">9</td>
+                  <td>English-I Communication Skills Lab</td>
+                  <td>2CR</td>
+                  <td>30hrs</td>
+              </tr>  
+            </tbody>
+          </table>
+            </div>
+          </div>
+    
+  </div>
+</div>
+            
+        </div>
+        </div><!-- comment -->
+        <div id="exam-results-main">
+            <h1>exam results</h1>
+        </div><!-- comment -->
+        <div id="attendance-main">
+           <h1>attendace</h1> 
+        </div>
+        <div id="request-fund-main">
+            <div class="container query-container bg-blur">
+        
+        <!-- <h3>Raise Your Query!</h3> -->
+        <form action="#" method="post">
+                <h2 class="text-center">Request for funds</h2><br>
+              <div class="mb-3">
+                <div class="mb-3">
+                    <label for="eventName" class="form-label"><h5>Event Name</h5></label>
+                    <input type="text" class="form-control" id="eventName" >
+                  </div>
+                  <div class="mb-3">
+                    <label for="purpose" class="form-label">Purpose</label>
+                    <textarea class="form-control" id="purpose" rows="5"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="amount" class="form-label"><h5>Amount</h5></label>
+                    <input type="number" step="1000" class="form-control" id="amount" >
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary  mt-3">Request Fund</button>
+                </div>
+              </div>
+
+        </form>
+    </div>
+        </div><!-- comment -->
+        <div id="raise-query-main">
+            <div class="container query-container bg-blur">
+        
+        <!-- <h3>Raise Your Query!</h3> -->
+        <form action="#" method="post">
+            
+              <div class="mb-3">
+                <label for="FormControlTextarea" class="form-label"><h3>Raise a Query</h3></label>
+                <textarea class="form-control" id="FormControlTextarea" rows="8"></textarea>
+                <div class="d-flex justify-content-end">
+                    <button type="submit" class="btn btn-primary  mt-3">Submit the Query</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div id="faculty-feedback-main">
+            <div class="container container-main text-center">
+  <div class="row">
+    <div class="col-sm">
+      <div class="card  offset-4" style="width: 24rem;" >
+          <div class="card-body">
+              <h5 class="card-title">Faculty Feedback</h5>
+              <div class="card-img-top">
+                  <img src="Images/fax-1889009_640.jpg" class="card-img-top" alt="..." width="12rem">
+              </div>
+                    
+                    <a href="home.html" class="btn btn-primary">Give Feedback</a>
+            </div>
+                    </div>
+    </div>
+   </div>
+        </form>
+    </div>
+        </div>
+        
+        <script>
+            var sem=document.getElementById('sem-registration');
+            var course=document.getElementById('course-info');
+            var exam=document.getElementById('exam-results');
+            var attendance=document.getElementById('attendance');
+            var fund=document.getElementById('request-fund');
+            var query=document.getElementById('query');
+            var feedback=document.getElementById("faculty-feedback");
+
+            
+                document.getElementById('sem-registration-main').style.display="none";
+                document.getElementById('course-info-main').style.display="flex";
+                document.getElementById('exam-results-main').style.display="none";
+                document.getElementById('attendance-main').style.display="none";
+                document.getElementById('request-fund-main').style.display="none";
+                document.getElementById('raise-query-main').style.display="none";
+                document.getElementById('faculty-feedback-main').style.display="none";
+                sem.style.color="white";
+                course.style.color="#c0c2c0";
+                exam.style.color="white";
+                attendance.style.color="white";
+                fund.style.color="white";
+                query.style.color="white";
+                feedback.style.color="white";
+            sem.addEventListener('click',e=>{
+                sem.style.color="white";
+                course.style.color="#c0c2c0";
+                exam.style.color="#c0c2c0";
+                attendance.style.color="#c0c2c0";
+                fund.style.color="#c0c2c0";
+                query.style.color="#c0c2c0";
+                feedback.style.color="#c0c2c0";
+                document.getElementById('sem-registration-main').style.display="flex";
+                document.getElementById('course-info-main').style.display="none";
+                document.getElementById('exam-results-main').style.display="none";
+                document.getElementById('attendance-main').style.display="none";
+                document.getElementById('request-fund-main').style.display="none";
+                document.getElementById('raise-query-main').style.display="none";
+                document.getElementById('faculty-feedback-main').style.display="none";
+            });
+            
+            course.addEventListener('click',e=>{
+                sem.style.color="#c0c2c0";
+                course.style.color="white";
+                exam.style.color="#c0c2c0";
+                attendance.style.color="#c0c2c0";
+                fund.style.color="#c0c2c0";
+                query.style.color="#c0c2c0";
+                feedback.style.color="#c0c2c0";
+                document.getElementById('sem-registration-main').style.display="none";
+                document.getElementById('course-info-main').style.display="flex";
+                document.getElementById('exam-results-main').style.display="none";
+                document.getElementById('attendance-main').style.display="none";
+                document.getElementById('request-fund-main').style.display="none";
+                document.getElementById('raise-query-main').style.display="none";
+                document.getElementById('faculty-feedback-main').style.display="none";
+            });  
+            
+            exam.addEventListener('click',e=>{
+                sem.style.color="#c0c2c0";
+                course.style.color="#c0c2c0";
+                exam.style.color="white";
+                attendance.style.color="#c0c2c0";
+                fund.style.color="#c0c2c0";
+                query.style.color="#c0c2c0";
+                feedback.style.color="#c0c2c0";
+                document.getElementById('sem-registration-main').style.display="none";
+                document.getElementById('course-info-main').style.display="none";
+                document.getElementById('exam-results-main').style.display="flex";
+                document.getElementById('attendance-main').style.display="none";
+                document.getElementById('request-fund-main').style.display="none";
+                document.getElementById('raise-query-main').style.display="none";
+                document.getElementById('faculty-feedback-main').style.display="none";
+            });  
+            
+            attendance.addEventListener('click',e=>{
+                sem.style.color="#c0c2c0";
+                course.style.color="#c0c2c0";
+                exam.style.color="#c0c2c0";
+                attendance.style.color="white";
+                fund.style.color="#c0c2c0";
+                query.style.color="#c0c2c0";
+                feedback.style.color="#c0c2c0";
+                document.getElementById('sem-registration-main').style.display="none";
+                document.getElementById('course-info-main').style.display="none";
+                document.getElementById('exam-results-main').style.display="none";
+                document.getElementById('attendance-main').style.display="flex";
+                document.getElementById('request-fund-main').style.display="none";
+                document.getElementById('raise-query-main').style.display="none";
+                document.getElementById('faculty-feedback-main').style.display="none";
+            });  
+            
+            fund.addEventListener('click',e=>{
+                sem.style.color="#c0c2c0";
+                course.style.color="#c0c2c0";
+                exam.style.color="#c0c2c0";
+                attendance.style.color="#c0c2c0";
+                fund.style.color="white";
+                query.style.color="#c0c2c0";
+                feedback.style.color="#c0c2c0";
+                document.getElementById('sem-registration-main').style.display="none";
+                document.getElementById('course-info-main').style.display="none";
+                document.getElementById('exam-results-main').style.display="none";
+                document.getElementById('attendance-main').style.display="none";
+                document.getElementById('request-fund-main').style.display="flex";
+                document.getElementById('raise-query-main').style.display="none";
+                document.getElementById('faculty-feedback-main').style.display="none";
+            }); 
+            query.addEventListener('click',e=>{
+                  sem.style.color="#c0c2c0";
+                course.style.color="#c0c2c0";
+                exam.style.color="#c0c2c0";
+                attendance.style.color="#c0c2c0";
+                fund.style.color="#c0c2c0";
+                query.style.color="white";
+                feedback.style.color="#c0c2c0";
+                document.getElementById('sem-registration-main').style.display="none";
+                document.getElementById('course-info-main').style.display="none";
+                document.getElementById('exam-results-main').style.display="none";
+                document.getElementById('attendance-main').style.display="none";
+                document.getElementById('request-fund-main').style.display="none";
+                document.getElementById('raise-query-main').style.display="flex";
+                document.getElementById('faculty-feedback-main').style.display="none";
+            });
+            feedback.addEventListener('click',e=>{
+                  sem.style.color="#c0c2c0";
+                course.style.color="#c0c2c0";
+                exam.style.color="#c0c2c0";
+                attendance.style.color="#c0c2c0";
+                fund.style.color="#c0c2c0";
+                query.style.color="#c0c2c0";
+                feedback.style.color="white";         
+                document.getElementById('sem-registration-main').style.display="none";
+                document.getElementById('course-info-main').style.display="none";
+                document.getElementById('exam-results-main').style.display="none";
+                document.getElementById('attendance-main').style.display="none";
+                document.getElementById('request-fund-main').style.display="none";
+                document.getElementById('raise-query-main').style.display="none";
+                document.getElementById('faculty-feedback-main').style.display="flex";
+                
+            });
+             
+        </script>
+    </body>
+</html>
+
