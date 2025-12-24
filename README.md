@@ -87,6 +87,4 @@ Security
 
 -Secure session handling
 
-Screenshots
 
-Screenshots of the application interface are available in the images/ folder.
