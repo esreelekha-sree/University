@@ -78,7 +78,8 @@ Steps to Run the Project
 6.Access the application via browser:
 
 http://localhost:8080/University
- Security
+ 
+Security
 
 Role-based authentication
 
@@ -86,6 +87,6 @@ Input validation
 
 Secure session handling
 
- Screenshots
+Screenshots
 
 Screenshots of the application interface are available in the images/ folder.
